@@ -1,0 +1,8 @@
+langchain-community
+pypdf
+langchain_openai
+pinecone
+flask
+python-dotenv
+langchain_text_splitters
+tenacity

@@ -1,0 +1,90 @@
+/* styles.css - base look derived from your sample */
+h2 {
+  color: #0d6efd;
+}
+p {
+  color: gray;
+}
+.flex-container {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+.card.chat-card {
+  background-color: whitesmoke;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border-radius: 12px;
+}
+.gradient-icon { width: 42px; height: 42px; }
+
+/* Chat window */
+.chat-window {
+  background: linear-gradient(180deg, #ffffff, #fbfbfb);
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 260px;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+/* Chat bubbles */
+.msg {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+.msg .bubble {
+  padding: 12px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* user on right */
+.msg.user {
+  justify-content: flex-end;
+}
+.msg.user .bubble {
+  background: linear-gradient(90deg,#0d6efd,#2563eb);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+/* assistant on left */
+.msg.assistant {
+  justify-content: flex-start;
+}
+.msg.assistant .bubble {
+  background: #f3f4f6;
+  color: #111827;
+  border-bottom-left-radius: 4px;
+}
+
+/* small metadata line under bubble */
+.msg .meta {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* Form styles */
+#chatForm input.form-control {
+  border-radius: 999px;
+  padding: 10px 16px;
+}
+#chatForm button {
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+/* make sure full answer visible */
+.chat-window .bubble { max-height: none; }
