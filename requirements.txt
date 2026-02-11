@@ -6,3 +6,4 @@ flask
 python-dotenv
 langchain_text_splitters
 tenacity
+gunicorn
